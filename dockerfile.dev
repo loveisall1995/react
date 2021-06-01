@@ -3,4 +3,5 @@ WORKDIR '/app'
 COPY package.json .
 RUN npm install -g npm@7.15.0 && \
     npm install
+COPY . .
 CMD ["npm", "run", "start"]
